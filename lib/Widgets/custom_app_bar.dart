@@ -38,7 +38,7 @@ class CustomAppBar extends StatelessWidget {
 
   Widget _buildIcon(IconData iconData) {
     return GestureDetector(
-      onTap:  leftCallBack != null ?() => leftCallBack!() : null,
+      onTap: leftCallBack != null ? () => leftCallBack!() : null,
       child: Container(
         padding: const EdgeInsets.all(10),
         decoration: const BoxDecoration(

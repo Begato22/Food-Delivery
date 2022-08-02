@@ -26,7 +26,10 @@ class Details extends StatelessWidget {
                 CustomAppBar(
                   leftIcon: Icons.arrow_back_ios_new_outlined,
                   rightIcon: Icons.favorite_border_outlined,
-                  leftCallBack: () => Navigator.of(context).pop(),
+                  leftCallBack: () {
+                    cubit.foodQuantity = 1;
+                    Navigator.of(context).pop();
+                  },
                 ),
                 FoodImg(food),
                 FoodDetails(food),
